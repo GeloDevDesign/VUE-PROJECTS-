@@ -14,6 +14,7 @@ import { ref, onMounted, computed } from 'vue';
       question: 'What is CSS ?',
       answer: 'Based on the search results, CSS (Cascading Style Sheets) is a styling language used to separate the presentation of a document written in a markup language, such as HTML, from its structure. It allows developers to control the layout, visual styling, and user experience of a website without altering the underlying HTML structure.',
       open: falseasdfasdfasdfasdf
+      name:'titegi'
     },
         
     {
