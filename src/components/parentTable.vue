@@ -22,6 +22,7 @@
 </script>
 
 <template>
+  
   <ChildTable :items="items" />
 
   

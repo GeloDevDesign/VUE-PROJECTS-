@@ -16,11 +16,10 @@ const generateQRCode = async () => {
   }
 };
 
-
 </script>
 
 <template>
-  <div class="flex h-screen justify-center items-center">
+  <div class="flex h-screen justify-center items-center bg-gray-800">
     <div class="w-96 h-96 bg-slate-900 flex flex-col justify-start items-center">
       <div class="mt-10">
         <h1 class="text-white font-semibold text-2xl mb-5">Generate QR Code</h1>

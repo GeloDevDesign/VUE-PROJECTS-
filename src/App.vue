@@ -1,13 +1,18 @@
 <script setup>
-import ProductCard from './components/parentTable.vue'
+
+import {ref} from 'vue';
+import buttonUI from './components/oberserverContent.vue'
+
+const sampleName = ref('new name');
 
 </script>
 
 
 <template>
-        
-        
-         <ProductCard/> 
+
+      <buttonUI/>
+     
+
 </template>
 
 <style>

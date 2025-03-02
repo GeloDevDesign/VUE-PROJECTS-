@@ -60,7 +60,6 @@ const paginatedItems = computed(() => {
 const totalPages = computed(() => Math.ceil(filterItems.value.length / itemsPerPage));
 
 const handleSearch = (search) => {
-  searchResult.value = search;
   currentPage.value = 1;
 };
 
@@ -70,10 +69,6 @@ const handleSort = (sortName) => {
 };
 
 
-
-const handlePageChange = (page) => {
-  currentPage.value = page;
-};
 
 
 

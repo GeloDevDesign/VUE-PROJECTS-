@@ -4,14 +4,12 @@ import Search from './searchChild.vue';
 import Sort from './childSort.vue'; 
 import Pagination from './pagination.vue'; 
 
-
-
 const searchResult = ref('');
 const sortType = ref(null);
 const showToast = ref(false);
 const deleteItemName = ref('');
 const currentPage = ref(1);
-const itemsPerPage = 5;
+const itemsPerPage = ref(5);
 
 
 const props = defineProps({
@@ -27,11 +25,7 @@ const filterItems = computed(() => {
 
   if (searchResult.value !== '') {
     return result.filter(item => 
-      item.name.toLowerCase().includes(searchResult.value.toLowerCase()) || 
-      item.category.toLowerCase().includes(searchResult.value.toLowerCase()) || 
-      item.stock === 0 || 
-      item.price.toString() === searchResult.value
-    );
+      item.name.toLowerCase().includes(searchResult.value.toLowerCase()));
   }
 
   switch (sortType.value) {
